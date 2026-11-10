@@ -1,0 +1,6 @@
+{
+  "name": "Dark Woods: Zombie FPS",
+  "description": "An ultra-realistic 16-wave first-person 3D zombie survival shooter in a dense misty forest with procedural weapons from pistol to RPG, touch controls, and PWA desktop installability.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
