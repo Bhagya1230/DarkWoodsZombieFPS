@@ -2,6 +2,7 @@
  * Main Application Component: Dark Woods 16-Wave Zombie FPS
  */
 import React, { useEffect, useRef, useState, useCallback } from 'react';
+import { Analytics } from '@vercel/analytics/react';
 import { GameEngine } from './game/GameEngine';
 import { GameStatus, PlayerState, WeaponConfig } from './game/types';
 import { WEAPONS } from './game/weapons';
@@ -217,6 +218,9 @@ export default function App() {
           onRestart={handleRestart}
         />
       )}
+
+      {/* 8. Vercel Web Analytics */}
+      <Analytics />
     </div>
   );
 }
