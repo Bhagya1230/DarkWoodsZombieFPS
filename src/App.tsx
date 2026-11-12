@@ -2,6 +2,7 @@
  * Main Application Component: Dark Woods 16-Wave Zombie FPS
  */
 import React, { useEffect, useRef, useState, useCallback } from 'react';
+import { Analytics } from '@vercel/analytics/react';
 import { GameEngine } from './game/GameEngine';
 import { GameStatus, PlayerState, WeaponConfig } from './game/types';
 import { WEAPONS } from './game/weapons';
@@ -155,6 +156,7 @@ export default function App() {
 
   return (
     <div className="relative w-screen h-screen overflow-hidden bg-[#05080c] select-none touch-none">
+      <Analytics />
       {/* 1. 3D WebGL Canvas Viewport Container */}
       <div ref={containerRef} className="absolute inset-0 w-full h-full cursor-crosshair" />
 
